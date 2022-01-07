@@ -108,30 +108,30 @@
 ----
 ### Analysis
 
- Below is the results from when we use load balancer and not using the load balancer
+ Below are the results when using a load balancer and not using a load balancer
 
- * When there is 50 users that access our web, if we don't use load balancer the average time of user accessing our web is
-   - landing : 1115 ms / 1.1 s
-   - blog : 1555 ms / 1.5 s
-   - app : 4 ms / 0.004 s
-- When we use load balancer, then
-   - landing : 37 ms / 0.037 s
-   - blog : 27 ms / 0.027 s
-   - app : 21 ms / 0.021 s
+* When there are 150 users accessing our web, if we use a load balancer then the average time users access our web is
+landing : 1273 ms = 1.27 s
+blog : 15740 ms = 15.74 s
+app : 2 ms = 0.002 s
 
-Here we can know that the average time of user accessing our web is faster then if we don't use load balancer. For the throughput or the amount of user accessing our web is
-- When there is 50 users that access our web, if we don't use load balancer the amount of user accessing our web is
+* when we don't use load balancer, then
+landing : 1261 ms = 1.26 s
+blog : 7489 ms = 7.49 s
+app : 2 ms = 0.002 s
+Here we can find out that the average time a user accesses our website is faster without using a load balancer than when using a load balancer. For throughput or the number of users accessing our web, namely:
 
-  - landing : 36 user / second
-  - blog :  20 user / second
-  - app : 41 user / second
+* When there are 150 users accessing our web, if we use a load balancer, the number of users accessing our web is
 
-- When we use load balancer, then
+landing : 58 users / second
+blog : 8 users / second
+app : 16 users / second
 
-  - landing : 427 user / second
-  - blog :  439 user / second
-  - app : 446 user / second
+* when not using a load balancer, then
+landing : 66 users / second
+blog : 14 users / second
+app : 34 users / second
+Here we can see that by using a web load balancer more users can be accessed in 1 second
 
-The conclusion is, if we use load balancer, then the time is faster and the amount of users that accessing our web is much more then when we don't use load balancer.
-
+In conclusion, if we use a load balancer, the time required is faster and the number of users accessing our web is more than if we do not use a load balancer.
 *SUWUN* 
